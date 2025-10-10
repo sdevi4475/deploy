@@ -1,0 +1,13 @@
+# text-input
+%%writefile app1.py
+import streamlit as st
+st.subheader("text-input")
+with st.container():
+   name =st.text_input('name')
+   age=st.number_input('age' , min_value=0,max_value=100,value=15,step=1)
+   description = st.text_area('description')
+   dob=st.date_input('dob')
+   submit = st.button("submit info")
+   if submit:
+     info_dict = {'name':name,'age':age,'description':description,'dob':dob}
+     st.write(info_dict)
