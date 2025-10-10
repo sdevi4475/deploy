@@ -1,0 +1,5 @@
+%%writefile app1.py
+import streamlit as st
+st.subheader("slider")
+salary_range  = st.slider("what is the  range of salary you expect ?", 0,100000,1000)
+st.write('your salary range is ', salary_range)
