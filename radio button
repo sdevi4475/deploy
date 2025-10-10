@@ -1,0 +1,5 @@
+%%writefile app1.py
+import streamlit as st
+st.header('radio')
+radio_button= st.radio(("what is your fav color ?"),('white','yellow','blue','red'))
+st.write('your fav color is ', radio_button)
