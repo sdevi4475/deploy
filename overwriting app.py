@@ -1,20 +1,11 @@
-# %%writefile app.py
+%%writefile app.py
 import streamlit as st
-
-st.title("welcome streamlit")
-st.header("this is header")
-st.subheader("this is subheader")
-formula = ''' a+b '''
-st.latex(formula)
-python_code = '''
-     a = 9
-     b=4
-     c=78
-     v = a+b+c
-     print(v)
-
-    '''
-st.code(python_code, language='python')
-st.header("Python")
-st.caption("python is good lang ")
-
+st.image('/content/LINEar bias.jpg' ,caption = " flower",width=500)
+st.header("display flower video")
+loc =open("/content/flower_vid.mp4",'rb')
+vid_bytes = loc.read()
+st.video(vid_bytes)
+# st.header("display flower auideo")
+# loc =open("/content/flower_vid.mp4",'rb')
+# vid_bytes = loc.read()
+# st.audio(vid_bytes,format=audio/ogg)
