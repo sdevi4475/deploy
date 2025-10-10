@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 st.image('/content/LINEar bias.jpg' ,caption = " flower",width=500)
 st.header("display flower video")
