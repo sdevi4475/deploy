@@ -1,1 +1,10 @@
-!pip install streamlit
+import streamlit as st
+st.image('/content/LINEar bias.jpg' ,caption = " flower",width=500)
+st.header("display flower video")
+loc =open("/content/flower_vid.mp4",'rb')
+vid_bytes = loc.read()
+st.video(vid_bytes)
+# st.header("display flower auideo")
+# loc =open("/content/flower_vid.mp4",'rb')
+# vid_bytes = loc.read()
+# st.audio(vid_bytes,format=audio/ogg)
